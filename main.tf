@@ -2,7 +2,7 @@
 # resource "aws_organizations_organization" "r-7plq" {
 #   aws_service_access_principals = ["access-analyzer.amazonaws.com"]
 # }
-
+#
 # resource "aws_accessanalyzer_analyzer" "account_level" {
 #   depends_on = [aws_organizations_organization.r-7plq]
 
