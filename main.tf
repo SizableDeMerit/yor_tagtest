@@ -9,6 +9,7 @@
 #   type          = "ACCOUNT"
 # }
 #
+#
 data "aws_organizations_organization" "r-7plq" {}
 
 resource "aws_accessanalyzer_analyzer" "account_level" {
