@@ -17,9 +17,9 @@ resource "aws_accessanalyzer_analyzer" "account_level" {
     analyzer_name = "Terraformed-AsAcountLevelAccessAnalyzer"
     #arn           = "arn:aws:access-analyzer:us-east-1:132619814380:analyzer/ConsoleAnalyzer-5f9facca-fc40-4973-8cd2-9526136ad4be"
     #id            = "ConsoleAnalyzer-5f9facca-fc40-4973-8cd2-9526136ad4be"
-    tags          = {}
-    tags_all      = {}
+    tags           = local.common_tags
     type          = "ACCOUNT"
+    
 }
 
 resource "aws_accessanalyzer_analyzer" "org_level" {
@@ -27,7 +27,6 @@ resource "aws_accessanalyzer_analyzer" "org_level" {
     analyzer_name = "Terraformed-AsOrgLevelAccessAnalyzer"
     #arn           = "arn:aws:access-analyzer:us-east-1:132619814380:analyzer/ConsoleAnalyzer-5f9facca-fc40-4973-8cd2-9526136ad4be"
     #id            = "ConsoleAnalyzer-5f9facca-fc40-4973-8cd2-9526136ad4be"
-    tags          = {}
-    tags_all      = {}
+    tags          = local.common_tags
     type          = "ORGANIZATION"
 }
