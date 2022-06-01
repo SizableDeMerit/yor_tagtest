@@ -8,6 +8,7 @@
 #   analyzer_name = "ConsoleAnalyzer-5f9facca-fc40-4973-8cd2-9526136ad4be"
 #   type          = "ACCOUNT"
 # }
+#
 data "aws_organizations_organization" "r-7plq" {}
 
 resource "aws_accessanalyzer_analyzer" "account_level" {
