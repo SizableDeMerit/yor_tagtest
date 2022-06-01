@@ -1,4 +1,4 @@
-
+#
 # resource "aws_organizations_organization" "r-7plq" {
 #   aws_service_access_principals = ["access-analyzer.amazonaws.com"]
 # }
