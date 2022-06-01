@@ -42,9 +42,9 @@ jobs:
     #     # Path to SARIF file relative to the root of the repository
     #     sarif_file: results.sarif
 
-    # - name: Checkout repo
-    #   uses: actions/checkout@v2
-    #   with:
-    #   fetch-depth: 0
-    # - name: Run yor action
-    #   uses: bridgecrewio/yor-action@main
+    - name: Checkout repo
+      uses: actions/checkout@v2
+      with:
+      fetch-depth: 0
+    - name: Run yor action
+      uses: bridgecrewio/yor-action@main
