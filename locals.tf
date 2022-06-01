@@ -9,7 +9,6 @@ locals {
   }
 }
 
-
 locals {
   Team             = "Cloud SEC"
   Departmen        = "Security"
