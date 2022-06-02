@@ -20,9 +20,9 @@ resource "aws_accessanalyzer_analyzer" "account_level" {
   #tags           = local.common_tags
   type = "ACCOUNT"
 
-  tags = merge(local.common_tags, {
-    yor_trace = "8c9fceac-da3b-4c9d-9991-db61b665ea00"
-  })
+  # tags = merge(local.common_tags, {
+  #   yor_trace = "8c9fceac-da3b-4c9d-9991-db61b665ea00"
+  # })
 
 }
 
