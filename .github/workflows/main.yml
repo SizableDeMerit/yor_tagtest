@@ -50,7 +50,7 @@ jobs:
     - name: Run yor action
       uses: bridgecrewio/yor-action@main
       with:
-      #version: 0.1.129
+        version: 0.1.129
       #directory: path/to/iac
       #skip_directory: test
-        tags: git_modifiers,git_commit,git_repository,yor_trace
+      #  tags: git_modifiers,git_commit,git_repository,yor_trace
