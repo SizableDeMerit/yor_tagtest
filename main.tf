@@ -25,7 +25,14 @@ resource "aws_accessanalyzer_analyzer" "account_level" {
   # })
 
   tags = {
-    yor_trace = "cf314b13-6c92-48f1-9a5a-8e29eec0a327"
+    yor_trace            = "cf314b13-6c92-48f1-9a5a-8e29eec0a327"
+    git_commit           = "18ae04308c86227973cc20a889811590c9d8c208"
+    git_file             = "main.tf"
+    git_last_modified_at = "2022-06-02 15:23:29"
+    git_last_modified_by = "sized-demerit-0u@icloud.com"
+    git_modifiers        = "102994153+SizableDeMerit/sized-demerit-0u"
+    git_org              = "SizableDeMerit"
+    git_repo             = "yor_tagtest"
   }
 }
 
@@ -38,6 +45,13 @@ resource "aws_accessanalyzer_analyzer" "org_level" {
   #tags          = local.common_tags
   type = "ORGANIZATION"
   tags = {
-    yor_trace = "884c1fce-95de-4c0f-9ea0-24ab71cde426"
+    yor_trace            = "884c1fce-95de-4c0f-9ea0-24ab71cde426"
+    git_commit           = "9d431a68b25e187fd937e43c1a76b181d96a4d95"
+    git_file             = "main.tf"
+    git_last_modified_at = "2022-05-26 20:38:09"
+    git_last_modified_by = "102994153+SizableDeMerit@users.noreply.github.com"
+    git_modifiers        = "102994153+SizableDeMerit"
+    git_org              = "SizableDeMerit"
+    git_repo             = "yor_tagtest"
   }
 }
