@@ -17,8 +17,7 @@ jobs:
    bridgecrew:
     runs-on: ubuntu-latest
     permissions:
-      actions: write
-      actions: read
+      actions: read|write
       contents: write
       security-events: write
     
