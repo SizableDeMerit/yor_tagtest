@@ -53,5 +53,5 @@ jobs:
       #version: 0.1.129
       #directory: path/to/iac
       #skip_directory: test
-        tag:
-          description: git_modifiers,git_commit,git_repository,yor_trace
+        tag: git_modifiers,git_commit,git_repository,yor_trace
+        
