@@ -24,7 +24,8 @@ jobs:
     steps:
     - name: Run Bridgecrew 
       uses: actions/checkout@v2
-    
+        with:
+          fetch-depth: 0
     - name:  
       id: Bridgecrew
       uses: bridgecrewio/bridgecrew-action@master
@@ -40,5 +41,5 @@ jobs:
     - name: Run yor action
       uses: bridgecrewio/yor-action@main
       with:
-        version: 0.3.0
+        #version: 0.3.0
         tag: git_modifiers,git_commit,git_repository,yor_trace
