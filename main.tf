@@ -24,6 +24,9 @@ resource "aws_accessanalyzer_analyzer" "account_level" {
   #   yor_trace = "8c9fceac-da3b-4c9d-9991-db61b665ea00"
   # })
 
+  tags = {
+    yor_trace = "cf314b13-6c92-48f1-9a5a-8e29eec0a327"
+  }
 }
 
 
