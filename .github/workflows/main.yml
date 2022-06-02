@@ -16,10 +16,10 @@ jobs:
   # This workflow contains a single job called "bridgecrew"
    bridgecrew:
     runs-on: ubuntu-latest
-    # permissions: write-all
-      # actions: read|write
-      # contents: write
-      # security-events: write
+    permissions:
+      actions: write
+      contents: write
+      security-events: write
     
     steps:
     - name: Run Bridgecrew 
