@@ -1,5 +1,6 @@
 # This is a workflow to help you setup Bridgecrew in github code scanning 
 # Additional information can be found here: https://docs.bridgecrew.io/docs/setup-github-code-scanning
+#
 name: Bridgecrew
 
 # Controls when the action will run. Triggers the workflow on push or pull request
@@ -16,8 +17,8 @@ jobs:
    bridgecrew:
     runs-on: ubuntu-latest
     permissions:
-      actions: read
-      contents: read
+      actions: write
+      contents: write
       security-events: write
     
     steps:
@@ -37,14 +38,14 @@ jobs:
         name: SARIF results
         path: results.sarif
     # Uploads results.sarif to GitHub repository using the upload-sarif action
-    - uses: github/codeql-action/upload-sarif@v2
-      with:
-        # Path to SARIF file relative to the root of the repository
-        sarif_file: results.sarif
-    # - name: Checkout repo
-    #   uses: actions/checkout@v2
+    # - uses: github/codeql-action/upload-sarif@v2
     #   with:
-    #   fetch-depth: 0
+    #     # Path to SARIF file relative to the root of the repository
+    #     sarif_file: results.sarif
+
+    #- name: Checkout repo
+    #  uses: actions/checkout@v2
+    #  with:
+    #  fetch-depth: 0
     - name: Run yor action
       uses: bridgecrewio/yor-action@main
-
