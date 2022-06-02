@@ -41,4 +41,4 @@ jobs:
       uses: bridgecrewio/yor-action@main
       with:
         version: 0.3.0
-        #tag: git_modifiers,git_commit,git_repository,yor_trace
+        tag: git_modifiers,git_commit,git_repository,yor_trace
