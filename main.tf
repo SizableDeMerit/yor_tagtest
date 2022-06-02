@@ -19,7 +19,6 @@ resource "aws_accessanalyzer_analyzer" "account_level" {
   #id            = "ConsoleAnalyzer-5f9facca-fc40-4973-8cd2-9526136ad4be"
   #tags           = local.common_tags
   type = "ACCOUNT"
-  tags          = local.common_tags
 }
 
 
@@ -30,5 +29,4 @@ resource "aws_accessanalyzer_analyzer" "org_level" {
   #id            = "ConsoleAnalyzer-5f9facca-fc40-4973-8cd2-9526136ad4be"
   #tags          = local.common_tags
   type = "ORGANIZATION"
-  tags          = local.common_tags
 }
